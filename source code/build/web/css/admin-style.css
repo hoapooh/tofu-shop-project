@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+/* === Common === */
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ++++++++++++++++++ ADMIN MAIN PAGE ++++++++++++++++++ */
+
+/* === Header === */
+.header {
+    padding-top: 10px;
+}
+
+.header .content {
+    border-bottom: 1px solid #000;
+}
+.header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .image {
+    width: 100px;
+}
+
+.header .list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 12px 0;
+}
+
+.header .list a {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.header .list a:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+    text-decoration: underline;
+}
+
+.header .btn {
+    width: 40px;
+    height: 40px;
+}
+
+/* === Main === */
+.main-mainpage {
+    margin-top: 200px;
+}
+
+.main-mainpage .row {
+    display: flex;
+    align-items: center;
+}
+
+.main-mainpage .info,
+.main-mainpage .slogan {
+    width: 50%;
+}
+
+.main-mainpage .info .title {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -0.116rem;
+}
+
+.main-mainpage .info .body {
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.main-mainpage .info .body .item {
+    width: 440px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-mainpage .info .body .item + .item {
+    margin-top: 10px;
+}
+
+.main-mainpage .info .body .item span {
+    font-weight: 600;
+    color: #ffb900;
+}
+
+.main-mainpage .slogan {
+    text-align: center;
+    color: #433c36;
+    font-family: "Luckiest Guy";
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.2rem;
+}
+
+.main-mainpage .slogan span {
+    color: #c05b51;
+}
+
+/* === Footer === */
+.footer {
+    margin-top: auto;
+    padding-bottom: 30px;
+}
+.footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ++++++++++++++++++ USER ++++++++++++++++++ */
+.main-user {
+    margin-top: 80px;
+}
+
+.main-user .image-table {
+    width: 100px;
+}
+
+.main-user .title {
+    color: #171100;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-user .table-content {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 2rem;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.main-user .table-content thead th {
+    background: #009879;
+    color: #fff;
+    text-align: left;
+    font-weight: 500;
+}
+
+.main-user .table-content th,
+.main-user .table-content td {
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+.main-user .table-content tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.main-user .table-content tbody tr:nth-of-type(even) {
+    background: #f3f3f3;
+}
+
+.main-user .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #333;
+    padding: 10px 40px;
+    border-radius: 6px;
+}
+
+.main-user .pagination .list {
+    margin: 20px 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.main-user .pagination .list .link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 2.045;
+    cursor: pointer;
+    background-position: 0 -45px;
+    transition: background-position 0.5s;
+}
+
+.main-user .pagination .list .link.active {
+    color: #fff;
+    background-image: linear-gradient(#ff4568, #ff4568);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.main-user .pagination .btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #383838;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-user .pagination .btn img {
+    width: 24px;
+    margin-right: 15px;
+}
+
+.main-user .pagination .btn-r img {
+    width: 24px;
+    margin-left: 15px;
+    transform: rotate(180deg);
+}
+
+.main-user .item i:hover {
+    color: #f2d349;
+}
+
+.main-user .view_del {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-user .view_del a {
+    color: #171100;
+}
+
+/* ++++++++++++++++++ INCOME ++++++++++++++++++ */
+.main-income {
+    margin-top: 40px;
+}
+
+.main-income .item a:hover {
+    text-decoration: underline;
+}
+
+.main-income .income-total {
+    font-size: 2rem;
+    color: #171100;
+    font-weight: 600;
+}
+
+.main-income .income-total p + p {
+    margin-top: 10px;
+}
+
+/* ++++++++++++++++++ PRODUCT ++++++++++++++++++ */
+.main-product .table__product__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-product .table__product__title .btn {
+    color: #fff;
+    background: #009879;
+    padding: 10px 15px;
+    min-width: 170px;
+    border-radius: 25px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.main-product .table__product__title .btn:hover {
+    opacity: 0.9;
+}
+
+.main-add-product {
+    margin-top: 20px;
+}
+
+.main-add-product .back-btn,
+.main-view-order .back-btn{
+    color: #171100;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.main-add-product .back-btn:hover,
+.main-view-order .back-btn:hover {
+    text-decoration: underline;
+}
